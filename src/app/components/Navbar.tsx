@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => (
     <nav className="navbar flex justify-between p-4 text-lightning-yellow bg-peacock-blue border-b border-silver-chalice">
-        <div className="font-bold text-3xl">ThetaMed</div>
+        <div className="font-bold text-3xl">EcoTreDi</div>
         <div className="flex-grow flex justify-center space-x-4">
             <Link href="/about">
                 Chi siamo

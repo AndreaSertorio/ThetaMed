@@ -9,7 +9,7 @@ import './globals.css';
 const Page: React.FC = () => (
   <div className="min-h-screen flex flex-col">
     <Head>
-      <title>ThetaMed</title>
+      <title>EcoTreDi</title>
     </Head>
     <Navbar />
     <main className="main flex p-4 flex-grow">
