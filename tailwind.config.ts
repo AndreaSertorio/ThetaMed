@@ -13,8 +13,17 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'arial': ['Arial', 'sans-serif'],
+        'times-new-roman': ['"Times New Roman"', 'serif'],
+        'georgia': ['Georgia', 'serif'],
+        'courier-new': ['"Courier New"', 'monospace'],
+        'verdana': ['Verdana', 'sans-serif'],
+        'trebuchet-ms': ['"Trebuchet MS"', 'sans-serif']
+      }
     },
   },
   plugins: [],
 }
+
 export default config

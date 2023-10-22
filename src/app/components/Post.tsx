@@ -1,3 +1,6 @@
+// components/Post.tsx
+
+
 import React, { FC } from 'react';
 import dynamic from 'next/dynamic';
 
