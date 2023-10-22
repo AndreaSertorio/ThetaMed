@@ -15,7 +15,7 @@ const Page: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const phrases = [
         "Ecografia Volumetrica",
-        "Precisione 4D",
+        "Un Nuovo Punto di Vista",
         "Matrice Adattiva"
     ];
 
