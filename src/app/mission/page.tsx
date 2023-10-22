@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Image from 'next/image';
+import Image from 'next/image';  // Questa è l'importazione del componente Image
 import '../globals.css';
 
 const Page: React.FC = () => (
