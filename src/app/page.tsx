@@ -1,4 +1,3 @@
-//page.tsx
 'use client'
 
 import React, { useState, useEffect } from 'react';
@@ -10,6 +9,7 @@ import './globals.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importazione degli stili
 import { Typewriter } from 'react-simple-typewriter';
+import Image from 'next/image';  // Importa il componente Image da next/image
 
 const Page: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +24,7 @@ const Page: React.FC = () => {
             setCurrentIndex(prev => (prev + 1) % phrases.length);
         }, 8000); // Cambia ogni 8 secondi
         return () => clearInterval(interval);
-    }, []);
+    }, [phrases.length]);  // Aggiungi phrases.length alla dipendenza di useEffect
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -34,33 +34,34 @@ const Page: React.FC = () => {
             <Navbar />
 
             <main className="main flex p-4 flex-grow relative">
-                <Carousel
-                    autoPlay
-                    infiniteLoop
-                    interval={5000}
-                    showThumbs={false}
-                    showStatus={false}
-                    className="h-screen mb-8 flex-1 m-0 p-0"
-                >
-                    <div className="h-full">
-                        <img src="/image1.png" alt="Descrizione Immagine 1" className="h-full object-cover" />
-                    </div>
-                    <div className="h-full">
-                        <img src="/image2.png" alt="Descrizione Immagine 2" className="h-full object-cover" />
-                    </div>
-                    <div className="h-full">
-                        <img src="/image3.png" alt="Descrizione Immagine 3" className="h-full object-cover" />
-                    </div>
-                    <div className="h-full">
-                        <img src="/image4.png" alt="Descrizione Immagine 4" className="h-full object-cover" />
-                    </div>
-                    <div className="h-full">
-                        <img src="/image5.png" alt="Descrizione Immagine 5" className="h-full object-cover" />
-                    </div>
-                    <div className="h-full">
-                        <img src="/image6.png" alt="Descrizione Immagine 6" className="h-full object-cover" />
-                    </div>
-                </Carousel>
+                  <Carousel
+                      autoPlay
+                      infiniteLoop
+                      interval={5000}
+                      showThumbs={false}
+                      showStatus={false}
+                      className="h-screen mb-8 flex-1 m-0 p-0"
+                  >
+                      {/* Utilizziamo il componente Image con layout="fill" e objectFit="cover" */}
+                      <div className="h-full relative">
+                          <Image src="/image1_resized.png" alt="Descrizione Immagine 1" layout="fill" objectFit="cover" />
+                      </div>
+                      <div className="h-full relative">
+                          <Image src="/image2_resized.png" alt="Descrizione Immagine 2" layout="fill" objectFit="cover" />
+                      </div>
+                      <div className="h-full relative">
+                          <Image src="/image3_resized.png" alt="Descrizione Immagine 3" layout="fill" objectFit="cover" />
+                      </div>
+                      <div className="h-full relative">
+                          <Image src="/image4_resized.png" alt="Descrizione Immagine 4" layout="fill" objectFit="cover" />
+                      </div>
+                      <div className="h-full relative">
+                          <Image src="/image5_resized.png" alt="Descrizione Immagine 5" layout="fill" objectFit="cover" />
+                      </div>
+                      <div className="h-full relative">
+                          <Image src="/image6_resized.png" alt="Descrizione Immagine 6" layout="fill" objectFit="cover" />
+                      </div>
+                  </Carousel>
 
                 <div className="absolute top-1/4 left-1/4 z-10 font-arial">
                     <h1 className="text-5xl text-white font-bold" style={{ WebkitTextStroke: '1.5px black' }}>EcoTreDi</h1>
