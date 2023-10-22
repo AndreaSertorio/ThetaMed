@@ -27,8 +27,8 @@ const ContactPage: React.FC = () => (
           <Image src="/contatti1.png" alt="Ufficio" width={500} height={500} className="md:w-1/2 md:order-first mb-4" />
         </div>
 
-        {/* Seconda immagine che occupa tutta la larghezza */}
-        <Image src="/contatti2.png" alt="Team" width={1000} height={500} className="w-full" />
+        {/* Seconda immagine che occupa tutta la larghezza
+        <Image src="/contatti2.png" alt="Team" width={1000} height={500} className="w-full" /> */}
 
       </div>
     </main>

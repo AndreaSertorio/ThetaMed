@@ -35,7 +35,7 @@ const Page: React.FC = () => (
             <h2 className="text-2xl font-bold mb-2">I soci fondatori ed il team</h2>
             <p className="text-lg mb-4">Il progetto &quot;ECOTREDI Multisonda&quot; è sostenuto da un team dedicato composto da specialisti in radiologia, ingegneri e professionisti IT, che, in collaborazione con partner esterni, forniscono le competenze tecniche e commerciali necessarie per garantire il successo dell&apos;innovazione.</p>
 
-            <div className="flex flex-row space-x-80 w-full">
+            <div className="flex flex-row space-x-40 w-full">
                 <div className="flex flex-col space-y-4 w-1/3">
                     <Image src="/acs.png" alt="Andrea C. Sertorio" width={150} height={150} />
                     <span>Andrea C. Sertorio</span>
