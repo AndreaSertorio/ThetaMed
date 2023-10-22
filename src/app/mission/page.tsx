@@ -24,7 +24,7 @@ const Page: React.FC = () => (
               Ricerca e sviluppo nel campo biomedico e dell’intelligenza artificiale (AI), per la realizzazione e commercializzazione di una metodica innovativa delle tecniche ecografiche di imaging. La formazione specialistica e professionale nel campo della radiologia per immagini associata all’AI, sia diretta che virtuale; la crescita della consapevolezza biomedica, a supporto delle persone interessate a diminuire il gap tra le proprie conoscenze e lo stato dell’arte nel campo biomedico e AI, con assistenza personale diretta tramite APP/sito.
             </p>
             <p className="text-lg mb-4">
-              Intelligenza artificiale: è una disciplina che studia se e in che modo si possano realizzare sistemi informatici intelligenti in grado di simulare la capacità e il comportamento umano. E’ una branca dell'informatica che consente ai computer di fare previsioni e decisioni, risolvere problemi ed eseguire attività. È una tecnologia che sta rapidamente cambiando il mondo e ha un impatto su tutte le discipline e i settori.
+              Intelligenza artificiale: è una disciplina che studia se e in che modo si possano realizzare sistemi informatici intelligenti in grado di simulare la capacità e il comportamento umano. E’ una branca dell&apos;informatica che consente ai computer di fare previsioni e decisioni, risolvere problemi ed eseguire attività. È una tecnologia che sta rapidamente cambiando il mondo e ha un impatto su tutte le discipline e i settori.
             </p>
           </div>
           <Image 
