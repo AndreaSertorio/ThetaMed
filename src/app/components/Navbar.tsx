@@ -12,8 +12,11 @@ const Navbar: React.FC = () => (
             <Link href="/about">
                 Chi siamo
             </Link>
-            <Link href="/projects">
+            {/* <Link href="/projects">
                 Progetti
+            </Link> */}
+            <Link href="/mission">
+                Mission & Vision
             </Link>
             <Link href="/contact">
                 Contatti
